@@ -11,43 +11,7 @@
 	(object Attribute
 	    tool       	"Java"
 	    name       	"IDE"
-	    value      	"Internal Editor")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagName1"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagText1"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagApply1"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagName2"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagText2"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagApply2"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagName3"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagText3"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagApply3"
-	    value      	""))
+	    value      	"Internal Editor"))
     quid       	"49BF2E560242"
     enforceClosureAutoLoad 	FALSE
     defaults   	(object defaults
@@ -140,51 +104,7 @@
 				type       	"double")
 			    (object ClassAttribute "nota5"
 				quid       	"49BF39ED005E"
-				type       	"double")))
-		    (object Class "Curso"
-			quid       	"49BF308F02DE"
-			operations 	(list Operations
-			    (object Operation "crearEstudiante"
-				quid       	"49BF3496030D"
-				concurrency 	"Sequential"
-				opExportControl 	"Public"
-				uid        	0)
-			    (object Operation "eliminarEstudiante"
-				quid       	"49BF34A4008C"
-				concurrency 	"Sequential"
-				opExportControl 	"Public"
-				uid        	0)
-			    (object Operation "actualizarEstudiante"
-				quid       	"49BF34B0003E"
-				concurrency 	"Sequential"
-				opExportControl 	"Public"
-				uid        	0)
-			    (object Operation "buscarEstudiante"
-				quid       	"49BF34C00138"
-				concurrency 	"Sequential"
-				opExportControl 	"Public"
-				uid        	0))
-			class_attributes 	(list class_attribute_list
-			    (object ClassAttribute "nombre"
-				quid       	"49BF30AF0177"
-				type       	"String")))
-		    (object Association "$UNNAMED$0"
-			quid       	"49BF30F903C8"
-			roles      	(list role_list
-			    (object Role "listaEstudiantes"
-				quid       	"49BF30FB02BF"
-				label      	"listaEstudiantes"
-				supplier   	"Logical View::universidad::Estudiante"
-				quidu      	"49BF2E86035C"
-				client_cardinality 	(value cardinality "*")
-				Containment 	"By Value"
-				is_navigable 	TRUE)
-			    (object Role "$UNNAMED$1"
-				quid       	"49BF30FB02C1"
-				supplier   	"Logical View::universidad::Curso"
-				quidu      	"49BF308F02DE"
-				is_navigable 	TRUE
-				is_aggregate 	TRUE))))
+				type       	"double"))))
 		logical_presentations 	(list unit_reference_list
 		    (object ClassDiagram "NewDiagram"
 			quid       	"49BF2E8302DF"
@@ -195,11 +115,11 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object ClassView "Class" "Logical View::universidad::Curso" @1
+			    (object ClassView "Class" "Logical View::universidad::Estudiante" @1
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
-				location   	(672, 712)
+				location   	(897, 834)
 				font       	(object Font
 				    size       	14
 				    face       	"Arial"
@@ -211,54 +131,7 @@
 				    default_color 	TRUE)
 				label      	(object ItemLabel
 				    Parent_View 	@1
-				    location   	(353, 316)
-				    fill_color 	13434879
-				    nlines     	1
-				    max_width  	638
-				    justify    	0
-				    label      	"Curso")
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"49BF308F02DE"
-				compartment 	(object Compartment
-				    Parent_View 	@1
-				    location   	(353, 393)
-				    font       	(object Font
-					size       	14
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    icon_style 	"Icon"
-				    fill_color 	13434879
-				    anchor     	2
-				    nlines     	6
-				    max_width  	600
-				    justify    	1)
-				width      	656
-				height     	825
-				annotation 	8)
-			    (object ClassView "Class" "Logical View::universidad::Estudiante" @2
-				ShowCompartmentStereotypes 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(1979, 787)
-				font       	(object Font
-				    size       	14
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@2
-				    location   	(1522, 294)
+				    location   	(440, 341)
 				    fill_color 	13434879
 				    nlines     	1
 				    max_width  	914
@@ -269,8 +142,8 @@
 				fill_color 	13434879
 				quidu      	"49BF2E86035C"
 				compartment 	(object Compartment
-				    Parent_View 	@2
-				    location   	(1522, 371)
+				    Parent_View 	@1
+				    location   	(440, 418)
 				    font       	(object Font
 					size       	14
 					face       	"Arial"
@@ -288,127 +161,7 @@
 				    justify    	1)
 				width      	932
 				height     	1019
-				annotation 	8)
-			    (object AssociationViewNew "$UNNAMED$0" @3
-				location   	(1256, 713)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"49BF30F903C8"
-				roleview_list 	(list RoleViews
-				    (object RoleView "listaEstudiantes" @4
-					Parent_View 	@3
-					location   	(600, -30)
-					font       	(object Font
-					    size       	10
-					    face       	"Arial"
-					    bold       	FALSE
-					    italics    	FALSE
-					    underline  	FALSE
-					    strike     	FALSE
-					    color      	0
-					    default_color 	TRUE)
-					label      	(object SegLabel @5
-					    Parent_View 	@4
-					    location   	(1348, 753)
-					    font       	(object Font
-						size       	10
-						face       	"Arial"
-						bold       	FALSE
-						italics    	FALSE
-						underline  	FALSE
-						strike     	FALSE
-						color      	0
-						default_color 	TRUE)
-					    anchor     	1
-					    anchor_loc 	1
-					    nlines     	1
-					    max_width  	313
-					    justify    	0
-					    label      	"+listaEstudiantes"
-					    pctDist    	0.362460
-					    height     	40
-					    orientation 	1)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"49BF30FB02BF"
-					client     	@3
-					supplier   	@2
-					vertices   	(list Points
-					    (1256, 713)
-					    (1513, 713))
-					line_style 	3
-					origin_attachment 	(1256, 713)
-					terminal_attachment 	(1513, 713)
-					label      	(object SegLabel @6
-					    Parent_View 	@4
-					    location   	(1421, 671)
-					    font       	(object Font
-						size       	10
-						face       	"Arial"
-						bold       	FALSE
-						italics    	FALSE
-						underline  	FALSE
-						strike     	FALSE
-						color      	0
-						default_color 	TRUE)
-					    anchor     	2
-					    anchor_loc 	1
-					    nlines     	1
-					    max_width  	15
-					    justify    	0
-					    label      	"*"
-					    pctDist    	0.645833
-					    height     	43
-					    orientation 	0))
-				    (object RoleView "$UNNAMED$1" @7
-					Parent_View 	@3
-					location   	(600, -30)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"49BF30FB02C1"
-					client     	@3
-					supplier   	@1
-					vertices   	(list Points
-					    (1256, 713)
-					    (1000, 713))
-					line_style 	3
-					origin_attachment 	(1256, 713)
-					terminal_attachment 	(1000, 713))))
-			    (object NoteView @8
-				location   	(856, 1403)
-				font       	(object Font
-				    size       	18
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@8
-				    location   	(328, 1231)
-				    fill_color 	13434879
-				    nlines     	4
-				    max_width  	1021
-				    justify    	1
-				    label      	
-|CRUD
-|create,read,update,delete
-				    )
-				line_color 	3342489
-				fill_color 	13434879
-				width      	1081
-				height     	356))))))
+				annotation 	8))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"49BF2E5F01C5"

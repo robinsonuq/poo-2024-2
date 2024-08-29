@@ -1,6 +1,5 @@
 package co.edu.uniquindio.poo.model;
 
-package co.edu.uniquindio.poo.model;
 
 import java.util.Arrays;
 
@@ -80,7 +79,7 @@ public class Tienda {
         if(posDisponible == -1){
             mensaje = "No hay cupo para un nuevo Producto";
         }else{
-            ProductoEncontrado = buscarProducto(nuevoProducto.getNumeroIdentificacion());
+            ProductoEncontrado = buscarProducto(nuevoProducto.getNombre());
             if(ProductoEncontrado != null){
                 mensaje = "El Producto ya esta registrado";
             }else{
@@ -94,7 +93,7 @@ public class Tienda {
     private Producto buscarProducto(String numeroIdentificacion) {
         Producto ProductoEncontrado = null;
         for (Producto productoAux : listaProductos) {
-            if(productoAux.get.equals(numeroIdentificacion)){
+            if(productoAux.getNombre().equals(numeroIdentificacion)){
                 return productoAux;
             }
         }
@@ -125,7 +124,7 @@ public class Tienda {
 
         for (int i = 0; i < listaProductos.length; i++) {
             Producto ProductoAux = listaProductos[i];
-            if(ProductoAux.getNumeroIdentificacion().equals(numeroIdentificacion)){
+            if(ProductoAux.getNombre().equals(numeroIdentificacion)){
                 listaProductos [i] = null;
                 mensaje = "El estudiannte ha sido eliminado";
                 return mensaje;
@@ -149,11 +148,7 @@ public class Tienda {
         String mensaje = "Producto no encontrado";
         Producto ProductoEncontrado = buscarProducto(numeroIdentificacion);
         if(ProductoEncontrado != null){
-            ProductoEncontrado.setApellidos(apellidos);
-            ProductoEncontrado.setCorreo(correo);
-            ProductoEncontrado.setEdad(edad);
-            ProductoEncontrado.setTelefono(telefono);
-            ProductoEncontrado.setNombres(nombres);
+           
             mensaje = "Producto actualizado exitosamente";
         }
         return mensaje;

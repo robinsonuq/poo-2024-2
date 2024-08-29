@@ -32,6 +32,48 @@ public class Producto {
         return precioCompra * (1 + incremento);
     }
 
+    /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    /**
+     * @return the precioCompra
+     */
+    public double getPrecioCompra() {
+        return precioCompra;
+    }
+
+    /**
+     * @param precioCompra the precioCompra to set
+     */
+    public void setPrecioCompra(double precioCompra) {
+        this.precioCompra = precioCompra;
+    }
+
+    /**
+     * @return the tipo
+     */
+    public String getTipo() {
+        return tipo;
+    }
+
+    /**
+     * @param tipo the tipo to set
+     */
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     @Override
     public String toString() {
         return "Nombre: " + nombre + ", Precio de Compra: " + precioCompra + ", Tipo: " + tipo + ", Precio de Venta: " + calcularPrecioVenta();

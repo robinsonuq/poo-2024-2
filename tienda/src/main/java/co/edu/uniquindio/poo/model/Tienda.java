@@ -93,9 +93,9 @@ public class Tienda {
 
     private Producto buscarProducto(String numeroIdentificacion) {
         Producto ProductoEncontrado = null;
-        for (Producto ProductoAux : listaProductos) {
-            if(ProductoAux.get.equals(numeroIdentificacion)){
-                return ProductoAux;
+        for (Producto productoAux : listaProductos) {
+            if(productoAux.get.equals(numeroIdentificacion)){
+                return productoAux;
             }
         }
         return ProductoEncontrado;

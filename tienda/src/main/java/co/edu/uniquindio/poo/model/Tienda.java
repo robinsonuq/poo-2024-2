@@ -93,8 +93,10 @@ public class Tienda {
     private Producto buscarProducto(String numeroIdentificacion) {
         Producto ProductoEncontrado = null;
         for (Producto productoAux : listaProductos) {
-            if(productoAux.getNombre().equals(numeroIdentificacion)){
-                return productoAux;
+            if(productoAux != null ){
+                if(productoAux.getNombre().equals(numeroIdentificacion)){
+                    return productoAux;
+                }
             }
         }
         return ProductoEncontrado;
@@ -153,5 +155,14 @@ public class Tienda {
         }
         return mensaje;
      }
+
+    public double calcularPrecioVenta(String nombreProducto) {
+
+       Producto producto = buscarProducto(nombreProducto);
+       if(producto != null){
+            return producto.calcularPrecioVenta();
+       }
+       return 0;
+    }
 
 }

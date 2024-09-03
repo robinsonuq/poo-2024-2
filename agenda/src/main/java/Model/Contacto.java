@@ -76,6 +76,27 @@ public class Contacto {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+    public int cuantasVocalesTiene(){
 
+        int cont = 0;     
+        for(int i = 0; i < nombre.length(); i++){
+        
+            if(esVocal(nombre.charAt(i))){
+               cont++;
+            }
+        }       
+        return cont;	
+    
+    }
+    
+    public boolean esVocal(char letra){
+    
+        if(letra == 'a' || letra == 'e'||letra == 'i'||letra == 'o'||letra == 'u'){
+          return true;
+        }else{
+            return false;
+        }
+    }
+    
 
 }

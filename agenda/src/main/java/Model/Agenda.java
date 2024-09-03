@@ -163,6 +163,23 @@ public double calcularPromedio(){
 }
 
 
+public void eliminarContactosVocales(){
+
+		
+	for(int i = 0; i < listaContactos.length;i++){
+		
+		Contacto aux = listaContactos[i];
+		if(aux != null){
+		
+			int contadorVocales = aux.cuantasVocalesTiene();
+			if(contadorVocales >= 3){
+				listaContactos[i] = null;
+			}
+		}
+	
+	}
+}
+
 
 
 

@@ -14,6 +14,28 @@ import Model.Reuniones;
 
 public class App {
     public static void main(String[] args) {
+
+            int[][] bingo = new int[5][3];
+
+            bingo[0][0] = {"",""};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         boolean repetirTodo = true;
         String mensaje;
         String nombreBuscado;

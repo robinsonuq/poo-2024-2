@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Agenda {
 
     private String nombre;
-    private Contacto[] listaContactos = new Contacto[50];
+    private Contacto[][][][][][][] listaContactos = new Contacto[50];
 
     public Agenda(String nombre) {
 

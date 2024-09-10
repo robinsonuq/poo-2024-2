@@ -1,11 +1,13 @@
 package Model;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 
 public class Agenda {
 
     private String nombre;
-    private Contacto[][][][][][][] listaContactos = new Contacto[50];
+    private Contacto[] listaContactos = new Contacto[50];
+    private Reunion[] listaReuniones = new Reunion[10];
 
     public Agenda(String nombre) {
 
@@ -238,6 +240,36 @@ private int levanteLaManoLosDeEdad(int edadi) {
 }
 
 
+public Reunion[][] obtenerReunionesFecha(){
+    Reunion[][] matriz = new Reunion[3][10];
+
+    LocalDate fechaInicio = LocalDate.of(2022,11,01);
+    LocalDate fechaFinal = LocalDate.of(2022,11,30);
+    matriz[0] = obtenerReunionesFila(fechaInicio, fechaFinal);
+    
+    fechaInicio = LocalDate.of(2022,12,01);
+    fechaFinal = LocalDate.of(2022,12,30);
+    matriz[1] = obtenerReunionesFila(fechaInicio, fechaFinal);
+    
+    fechaInicio = LocalDate.of(2023,01,01);
+    fechaFinal = LocalDate.of(2022,11,30);
+    matriz[2] = obtenerReunionesFila(fechaInicio, fechaFinal);
+
+    return matriz;
+}
+
+private Reunion[] obtenerReunionesFila(LocalDate fechaInicio, LocalDate fechaFinal) {
+     Reunion[] arreglo = new Reunion[10]; 
+    int cont = 0;
+    for (Reunion reunion : listaReuniones) {
+        if(reunion.getFecha().isAfter(fechaInicio) &&
+         reunion.getFecha().isBefore(fechaFinal)){
+            arreglo[cont] = reunion;
+            cont++;
+        }
+    }
+    return arreglo;
+}
 
 
 

@@ -15,14 +15,28 @@ import Model.Reuniones;
 public class App {
     public static void main(String[] args) {
 
-            int[][] bingo = new int[5][3];
+            int x = 100;
+            int[][] bingo = new int[5][5];
+            bingo[0][0] = 2;
+            bingo[0][1] = 4;
+            bingo[0][2] = 3;
+            bingo[0][3] = 3;
+            bingo[0][4] = 3;
 
-            bingo[0][0] = {"",""};
+            bingo[1][0] = 3;
+            bingo[1][1] = 3;
+            bingo[1][2] = 3;
+            bingo[1][3] = 3;
+            bingo[1][4] = 3;
 
+           
+            for (int i = 0; i < bingo.length; i++) {
+                for (int j = 0; j < bingo[0].length; j++) {
+                    
+                }
+            }
 
-
-
-
+            System.out.println();
 
 
 

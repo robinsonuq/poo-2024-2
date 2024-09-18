@@ -31,7 +31,7 @@ public class App {
 
            
             for (int i = 0; i < bingo.length; i++) {
-                for (int j = 0; j < bingo[0].length; j++) {
+                for (int j = 0; j < bingo[i].length; j++) {
                     
                 }
             }
